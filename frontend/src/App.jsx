@@ -7,7 +7,7 @@ import HomePage from "./pages/HomePage";
 import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
 import SettingsPage from "./pages/SettingsPAge";
-import ProfilePage from "./pages/ProfilePAge";
+import Profile from "./pages/Profile";
 
 import { Loader } from "lucide-react";
 import { Toaster } from "react-hot-toast";
