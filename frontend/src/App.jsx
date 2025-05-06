@@ -6,7 +6,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
-import SettingsPage from "./pages/SettingsPAge";
+import Settings from "./pages/Settings";
 import Profile from "./pages/Profile";
 
 import { Loader } from "lucide-react";
@@ -54,11 +54,11 @@ const App = () => {
         />
         <Route
           path="/settings"
-          element={authUser ? <SettingsPage /> : <Navigate to="/login" />}
+          element={authUser ? <Settings /> : <Navigate to="/login" />}
         />
         <Route
           path="/profile"
-          element={authUser ? <ProfilePage /> : <Navigate to="/login" />}
+          element={authUser ? <Profile /> : <Navigate to="/login" />}
         />
       </Routes>
     </div>
